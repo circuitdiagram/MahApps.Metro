@@ -25,7 +25,7 @@ namespace MahApps.Metro.Controls
     [TemplatePart(Name = PART_OverlayBox, Type = typeof(Grid))]
     [TemplatePart(Name = PART_MetroDialogContainer, Type = typeof(Grid))]
     [TemplatePart(Name = PART_FlyoutModal, Type = typeof(Rectangle))]
-    public class MetroWindow : Window
+    public class MetroWindow : NativeHelpers.PerMonitorDPIWindow
     {
         private const string PART_Icon = "PART_Icon";
         private const string PART_TitleBar = "PART_TitleBar";
